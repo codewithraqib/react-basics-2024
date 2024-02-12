@@ -1,0 +1,22 @@
+.question_ans_wrapper {
+  display: block;
+  margin-bottom: 30px;
+  background-color: aliceblue;
+  padding: 20px 10vw;
+
+  text-align: left;
+}
+
+.question {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.ans_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ans {
+  height: 40px;
+}
