@@ -1,10 +1,75 @@
-.button {
-  height: 40px;
-  padding: 6px;
-  background-color: green;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: none;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --primary-color: #f3f3f3;
+  --secondary-color: #e94f4f;
+  --third-color: #f3f3f3;
+  --text-color: #464647;
+  --white-color: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* utility classes starts */
+.content_wrapper {
+  width: 80vw;
+  margin: auto;
+}
+
+.nav_bar {
+  padding: 1rem 0;
+  box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav_bar_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar .logo_wrapper img:hover {
+  cursor: pointer;
+}
+
+.menu_wrapper .menu_item {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   border-radius: 8px;
+}
+
+/* .menu_wrapper .menu_item:last-child {
+  padding-right: 0;
+} */
+
+.menu_wrapper .menu_item.active,
+.menu_wrapper .menu_item:hover {
+  background-color: var(--secondary-color);
+}
+
+.menu_wrapper .menu_item.active a,
+.menu_wrapper .menu_item:hover a {
+  color: var(--white-color);
 }

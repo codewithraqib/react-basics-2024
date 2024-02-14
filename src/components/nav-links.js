@@ -1,7 +1,7 @@
 const NavBar = ({ navClick, name, hideNavLinks, navLinks, color }) => {
 
     return (
-        <div className="nav_bar" style={color ? { backgroundColor: color } : { backgroundColor: "#F00" }}>
+        <div className="nav_bar content_wrapper" style={color ? { backgroundColor: color } : { backgroundColor: "#F00" }}>
 
 
             <div className="nav_bar_left">{name}</div>
